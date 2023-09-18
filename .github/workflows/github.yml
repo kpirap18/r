@@ -56,8 +56,6 @@ jobs:
 #          mark: "'+"
     deploy:
     runs-on: ubuntu-latest
-      permissions: # Required if github_deployment is set to true.
-        deployments: write
       steps:
       - uses: actions/checkout@v3
        - uses: JorgeLNJunior/render-deploy@v1.4.1
