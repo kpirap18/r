@@ -27,9 +27,9 @@ jobs:
             pip install .
             pip install -r requirements_dev.txt
 
- #     - name: Run tests
- #       run: |
- #           pytest .
+      - name: Run tests
+        run: |
+            pytest .
 
       - name: Deploy project
         uses: ashishkujoy/render-deploy@v1.0.5
@@ -39,24 +39,7 @@ jobs:
           api-key: rnd_IoSSfQ8iiO4DENQ0pTwybOgiHcUq
           max-deployment-wait-ms: 3600000
           delay-in-ms: 10000
-      
-      
- #     - name: Deploy project
- #       uses: ttskch/render-deploy@v1.0.0 #johnbeynon/render-deploy-action@v0.0.8 #JorgeLNJunior/render-deploy@v1.3.2
- #       with:
- #         service-id: https://api.render.com/deploy/srv-ck417o36fquc73fopttg?key=ZmdcdpWHkoI # ${{ secrets.RENDER_SERVICE_ID }} # required
- #         api-key: rnd_IoSSfQ8iiO4DENQ0pTwybOgiHcUq #${{ secrets.RENDER_API_KEY }} # required
-         # clear_cache: false # Clear build cache. Optional
-          #wait_deploy: false # Wait until the deploy status is successful. Warning! Free Render services can take +5 minutes to be fully deployed. Optional
-          #github_deployment: false # Create a GitHub deployment. Optional
-          #deployment_environment: 'production' # GitHub deployment enviroment name. Optional
-          #github_token: ${{ secrets.GITHUB_TOKEN }} # Remove if github_deployment is false. Optional
-#        uses: akhileshns/heroku-deploy@v3.4.6
-#        with:
-#          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-#          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
-#          heroku_email: ${{ secrets.HEROKU_EMAIL }}
-#          usedocker: true
+   
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
