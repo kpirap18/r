@@ -40,7 +40,7 @@ def test_get_id_existing():
 def test_get_id_non_existing():
     factory = RequestFactory()
     request = factory.get('/api/v1/persons/')
-    response = person_service_api(request, -1)
+    response = person_service_api(request, 0)
     assert response.status_code == 404
 
 def test_put():
