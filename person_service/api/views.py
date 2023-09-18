@@ -23,8 +23,7 @@ def person_service_api(request, id=None):
                 person_serializer = PersonSerializer(person)
                 return JsonResponse(person_serializer.data, safe=False, status=status.HTTP_200_OK)
             except Person.DoesNotExist:
-                return HttpResponse(
-                    content=b'asdfg', status=status.HTTP_404_NOT_FOUND, headers='1')
+                return HttpResponse(status=status.HTTP_404_NOT_FOUND, headers='1')
 
     elif request.method == "POST":
         try:

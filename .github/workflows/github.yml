@@ -20,13 +20,17 @@ jobs:
       - name: Setup Python 3
         uses: actions/setup-python@v2
         with:
-           python-version: 3.8
+           python-version: 3.9.1
 
       - name: Install
         run: |
             pip install .
             pip install -r requirements_dev.txt
 
+      - name: Dir
+        run: |
+            ll
+      
       - name: Run tests
         run: |
             pytest .
