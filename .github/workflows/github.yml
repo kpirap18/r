@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy project
         #uses: actions/checkout@v3
-        uses: kpirap18/render-deploy@v1.4.1
+        uses: kpirap18/r@v1.4.1
         with:
           service_id: https://api.render.com/deploy/srv-ck417o36fquc73fopttg?key=ZmdcdpWHkoI # ${{ secrets.RENDER_SERVICE_ID }} # required
           api_key: rnd_IoSSfQ8iiO4DENQ0pTwybOgiHcUq #${{ secrets.RENDER_API_KEY }} # required
