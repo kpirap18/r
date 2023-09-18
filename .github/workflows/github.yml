@@ -32,7 +32,7 @@ jobs:
  #           pytest .
 
       - name: Deploy project
-        uses: ashishkujoy/render-deploy@v1.0.1
+        uses: ashishkujoy/render-deploy@v1.0.5
         with:
           service-id: srv-ck417o36fquc73fopttg
           service-key: ZmdcdpWHkoI
