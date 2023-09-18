@@ -37,8 +37,8 @@ jobs:
           service-id: srv-ck417o36fquc73fopttg
           service-key: ZmdcdpWHkoI
           api-key: rnd_IoSSfQ8iiO4DENQ0pTwybOgiHcUq
-          max-deployment-wait-ms: 360000
-          delay-in-ms: 10000
+         # max-deployment-wait-ms: 360000
+         # delay-in-ms: 10000
       
       
  #     - name: Deploy project
