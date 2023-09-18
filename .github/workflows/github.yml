@@ -32,7 +32,7 @@ jobs:
  #           pytest .
 
       - name: Deploy project
-        uses: johnbeynon/render-deploy-action@v0.0.8 #JorgeLNJunior/render-deploy@v1.3.2
+        uses: ttskch/render-deploy@v1.0.0 #johnbeynon/render-deploy-action@v0.0.8 #JorgeLNJunior/render-deploy@v1.3.2
         with:
           service-id: https://api.render.com/deploy/srv-ck417o36fquc73fopttg?key=ZmdcdpWHkoI # ${{ secrets.RENDER_SERVICE_ID }} # required
           api-key: rnd_IoSSfQ8iiO4DENQ0pTwybOgiHcUq #${{ secrets.RENDER_API_KEY }} # required
