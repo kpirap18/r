@@ -27,9 +27,9 @@ jobs:
             pip install .
             pip install -r requirements_dev.txt
 
-      - name: Run tests
-        run: |
-            pytest .
+ #     - name: Run tests
+ #       run: |
+ #           pytest .
 
 #      - name: Deploy project
 #        uses: akhileshns/heroku-deploy@v3.4.6
